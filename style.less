@@ -1,5 +1,6 @@
 //Variables Globales
 @color_fondo : #F1F1F1;
+@color_sombra : #1E15C6;
 @ancho : 860px;
 //Estilos
 html, body {height: 100%;}
@@ -25,17 +26,18 @@ body{
     }
 
 header{
-        height: 130px;
+        height: 150px;
         h1{font-size: 2.3em;margin-top: 25px;text-align: center;}
         input[type="text"]{
-                border: 1px solid darken(@color_fondo, 30%);
-                border-radius: 5px;
-                color: darken(@color_fondo, 60%);
-                display: block;
-                margin: 0 auto;
-                padding: 5px 10px;
-                width: 600px;
-            }
+        border: 1px solid darken(@color_fondo, 30%);
+        border-radius: 5px;
+        color: darken(@color_fondo, 60%);
+        display: block;
+        margin: 0 auto;
+        padding: 5px 10px;
+        width: 600px;
+        transition: All linear 0.5s;
+        &:focus{border: 1px solid lighten(@color_sombra, 35%);box-shadow: 0px 0px 4px lighten(@color_sombra, 35%);}}
     }
 
 section{  
@@ -58,16 +60,19 @@ section{
     }
 
 footer{
-    #foot{width: @ancho;margin: 0 auto;}
     background-color: darken(@color_fondo, 4%);
+    border-top: 1px solid darken(@color_fondo, 8%);
     height: 160px; /* Altura del Footer en px*/
     margin-top: -180px; /* altura en px del footer con valor negativo */
     padding-top: 5px;
     position: relative; 
     width: 100%;
+    #foot{width: @ancho;margin: 0 auto;}
     h3{margin: 0;padding: 0;padding-left: 90px;}
     #enlaces_firefox{display: block;width: @ancho;}
     ul{
     li{float: left; list-style: none; padding-right: 240px;}}
-    }
+    a{
+    &:hover{opacity: 0.7;}
+    }}
 
