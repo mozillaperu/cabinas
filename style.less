@@ -1,0 +1,57 @@
+//Variables Globales
+@color_fondo : #F1F1F1;
+
+//Estilos
+body{
+        background-color: @color_fondo;
+        font-size: 16px;
+    	line-height: 1.2;
+    	font-family: MetaBlack, "Trebuchet MS", sans-serif;
+        color: darken(@color_fondo, 60%);
+    }
+    
+.contenedor{
+        width: 860px;
+        margin: 0 auto;
+    }
+
+header{
+        margin-bottom: 30px;
+        h1{font-size: 2.3em;text-align: center;}
+        input[type="text"]{
+                border: 1px solid darken(@color_fondo, 30%);
+                border-radius: 5px;
+                color: darken(@color_fondo, 60%);
+                display: block;
+                margin: 0 auto;
+                padding: 5px 10px;
+                width: 600px;
+            }
+    }
+
+section{
+    margin-bottom: 30px;
+    padding-left: 90px;
+    article{
+        float: left;
+        }
+    #enlaces{
+        margin: -28px 0px 0px 40px;
+        h3{font-size: 1.5em;text-align: center; }
+        ul{ width: 250px;
+        li{ float: left; list-style: none; padding-right: 40px;}} }        
+    }
+
+footer{
+    background-color: darken(@color_fondo, 4%);
+    border-top: 1px solid darken(@color_fondo, 7%) ;
+    bottom: 0px;
+    left: 0;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    h3{margin: 0;padding: 0;padding-left: 90px;}
+    ul{
+    li{float: left; list-style: none; padding-right: 240px;}}
+    }
+
