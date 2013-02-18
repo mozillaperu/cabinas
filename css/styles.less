@@ -1,0 +1,81 @@
+//Importes
+@import "normalize.less";
+
+//Variables Globales
+@color_fondo : #F1F1F1;
+@color_sombra : #1E15C6;
+@ancho : 860px;
+//Estilos
+html, body {height: 100%;}
+
+body{
+        background-color: @color_fondo;
+        font-size: 16px;
+    	line-height: 1.2;
+    	font-family: MetaBlack, "Trebuchet MS", sans-serif;
+        color: darken(@color_fondo, 60%);
+        overflow: hidden;
+        &:before{
+        content:"";
+        height:100%;
+    	float:left;
+    	width:0;
+    	margin-top:-32767px;
+        }
+    }
+
+#contenedor{
+        min-height: 100%;
+    }
+
+header{
+        height: 150px;
+        h1{font-size: 2.3em;margin-top: 25px;text-align: center;}
+        input[type="text"]{
+        border: 1px solid darken(@color_fondo, 30%);
+        border-radius: 5px;
+        color: darken(@color_fondo, 60%);
+        display: block;
+        margin: 0 auto;
+        padding: 5px 10px;
+        width: 600px;
+        transition: All linear 0.5s;
+        &:focus{border: 1px solid lighten(@color_sombra, 35%);box-shadow: 0px 0px 4px lighten(@color_sombra, 35%);}}
+    }
+
+section{  
+    width: @ancho;
+    margin: 0 auto;
+    overflow: auto;
+    padding-left: 90px;
+    padding-bottom: 200px;
+    article{
+        float: left;
+        }
+    #enlaces{
+        margin: -28px 0px 0px 40px;
+        h3{font-size: 1.5em;text-align: center;}
+        ul{ width: 250px;
+        li{ float: left; list-style: none; padding-right: 40px;}}}
+        a{
+        &:hover{opacity: 0.7;}
+        }
+    }
+
+footer{
+    background-color: darken(@color_fondo, 4%);
+    border-top: 1px solid darken(@color_fondo, 8%);
+    height: 160px; /* Altura del Footer en px*/
+    margin-top: -180px; /* altura en px del footer con valor negativo */
+    padding-top: 5px;
+    position: relative; 
+    width: 100%;
+    #foot{width: @ancho;margin: 0 auto;}
+    h3{margin: 0;padding: 0;padding-left: 90px;}
+    #enlaces_firefox{display: block;width: @ancho;}
+    ul{
+    li{float: left; list-style: none; padding-right: 240px;}}
+    a{
+    &:hover{opacity: 0.7;}
+    }}
+
