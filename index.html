@@ -21,12 +21,14 @@
 			</header>
 			
 			<section>
-				<article id="video">
+				<!--<article id="video">
 					<iframe src="http://player.vimeo.com/video/1561578?color=ff9933" width="400" height="298" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
-				</article>
-				
+				</article>-->
+				<video width="400" preload="auto" controls="" style="width: 400px ! important;" tabindex="0">
+					<source src="http://videos.mozilla.org/serv/marketing/Firefox/Firefox%20Tabs_1.webm"></source>
+				</video>
 				<article id="enlaces">
-					<h3>Enlaces Directos</h3>
+					<!--<h3>Enlaces Directos</h3>-->
 					<ul>
 						<li><a target="_blank" title="Facebook" href="https://www.facebook.com/MozillaPeru"><img src="img/facebook.png" alt="firefox" width="80px"/></a></li>
 						<li><a target="_blank" title="Twitter" href="https://twitter.com/mozillaperu/"><img src="img/twitter.png" alt="firefox" width="80px"/></a></li>
@@ -40,7 +42,6 @@
 		</div>
 		<footer>
 			<div id="foot">
-			<h3>Aprende más de Firefox</h>
 			<div id="enlaces_firefox">
 				<ul>
 					<li><a target="_blank" href="https://www.getpersonas.com/es/persona/436446"><img src="img/foxkeh.png" alt="firefox" width="60px"/>Personaliza tu Firefox</a></li>
@@ -51,5 +52,14 @@
 			</div>
 			</div>
 		</footer>
+		<script type="text/javascript" src="http://s3.www.universalsubtitles.org/embed.js">
+		({
+			video_url: "http://www.mysite.com/link_to_video.ogg",
+			video_config: {
+				poster: "http://www.mysite.com/link_to_poster.jpg",
+				click_to_play: true
+			}
+		})
+		</script>
 	</body>
 </html>
