@@ -42,9 +42,9 @@ section{width:760px;margin:0 auto;overflow:auto;padding-left:90px;padding-bottom
 section a.trome img{padding-left:6px;}
 section a.depor img{border-radius:15px;padding-left:3px;}
 section a.republica img{border-radius:15px;padding-left:3px;}
-section video{float:left;margin-top:13px;}
+section video{float:left;margin-top:5px;}
 section #enlaces{float:left;margin:-15px 0px 0px 40px;}section #enlaces h3{font-size:1.5em;text-align:center;margin-bottom:-5px;}
-section #enlaces ul{width:250px;}section #enlaces ul li{float:left;list-style:none;padding-right:40px;padding-bottom:5px;}
+section #enlaces ul{width:250px;}section #enlaces ul li{float:left;list-style:none;padding-right:40px;padding-bottom:5px;}section #enlaces ul li img{border-radius:10px;}
 section a:hover{opacity:0.7;}
 footer{background-color:#e7e7e7;border-top:1px solid #dddddd;height:250px;margin-top:-190px;padding-top:5px;position:relative;width:100%;}footer #foot{width:780px;margin:0 auto;}
 footer h3{margin:0;padding:0;padding-left:90px;}
