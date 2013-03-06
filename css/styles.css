@@ -33,12 +33,12 @@ input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
 input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"] ::-webkit-search-cancel-button,input[type="search"] ::-webkit-search-decoration{-webkit-appearance:none;}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
-html,body{height:100%;}
-body{background-color:#f1f1f1;font-size:16px;line-height:1.2;font-family:MetaBlack,"Trebuchet MS",sans-serif;color:#585858;overflow:hidden;}body:before{content:"";height:100%;float:left;width:0;margin-top:-32767px;}
+@font-face{font-family:'Open Sans';src:url('../fonts/OpenSans-Regular-webfont.eot');src:url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'Open Sans';src:url('../fonts/OpenSans-Semibold-webfont.eot');src:url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');font-weight:bold;font-style:normal;}@font-face{font-family:'Open Sans Light';src:url('../fonts/OpenSans-Light-webfont.eot');src:url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/OpenSans-Light-webfont.woff') format('woff'),url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');font-weight:normal;font-style:normal;}html,body{height:100%;}
+body{background-color:#f1f1f1;font-size:16px;line-height:1.2;font-family:'Open Sans Light',sans-serif;color:#585858;overflow:hidden;}body:before{content:"";height:100%;float:left;width:0;margin-top:-32767px;}
 #contenedor{min-height:100%;}
-header{height:140px;}header h1{font-size:2.3em;margin-top:23px;text-align:center;}
+header{height:140px;min-width:650px;}header h1{font-size:2.3em;font-weight:normal;margin-top:23px;margin-left:-80px;text-align:center;font-family:'Open Sans Light',sans-serif;}header h1 img{position:fixed;top:0;}
 header input[type="text"]{border:1px solid #a4a4a4;border-radius:5px;color:#585858;display:block;margin:0px auto 0px;padding:5px 10px;width:600px;transition:All linear 0.5s;}header input[type="text"]:focus{border:1px solid #9e99f4;box-shadow:0px 0px 4px #9e99f4;}
-section{width:860px;margin:0 auto;overflow:auto;padding-left:90px;padding-bottom:200px;}section a.comercio img{border-radius:15px;}
+section{width:760px;margin:0 auto;overflow:auto;padding-left:90px;padding-bottom:200px;}section a.comercio img{border-radius:15px;}
 section a.trome img{padding-left:6px;}
 section a.depor img{border-radius:15px;padding-left:3px;}
 section a.republica img{border-radius:15px;padding-left:3px;}
@@ -46,9 +46,9 @@ section video{float:left;margin-top:13px;}
 section #enlaces{float:left;margin:-15px 0px 0px 40px;}section #enlaces h3{font-size:1.5em;text-align:center;margin-bottom:-5px;}
 section #enlaces ul{width:250px;}section #enlaces ul li{float:left;list-style:none;padding-right:40px;padding-bottom:5px;}
 section a:hover{opacity:0.7;}
-footer{background-color:#e7e7e7;border-top:1px solid #dddddd;height:250px;margin-top:-190px;padding-top:5px;position:relative;width:100%;}footer #foot{width:860px;margin:0 auto;}
+footer{background-color:#e7e7e7;border-top:1px solid #dddddd;height:250px;margin-top:-190px;padding-top:5px;position:relative;width:100%;}footer #foot{width:780px;margin:0 auto;}
 footer h3{margin:0;padding:0;padding-left:90px;}
-footer #enlaces_firefox{display:block;width:860px;}
-footer ul li{float:left;height:70px;list-style:none;padding-right:120px;width:280px;}footer ul li img{float:left;margin-top:-16px;padding-right:10px;}
+footer #enlaces_firefox{display:block;width:780px;}
+footer ul li{float:left;height:70px;list-style:none;padding-right:80px;width:280px;}footer ul li img{float:left;margin-top:-16px;padding-right:10px;}
 footer ul li .imgfix{margin-top:-10px;padding-left:14px;padding-right:17px;}
 footer a{font-size:0.9em;color:#585858;text-decoration:none;}footer a:hover{opacity:0.7;color:#727272;}
