@@ -3,6 +3,7 @@
 
 //Variables Globales
 @color_fondo : #F1F1F1;
+@color_fondo2 : #F5F1E7;
 @color_sombra : #1E15C6;
 @ancho : 780px;
 
@@ -31,7 +32,7 @@
 html, body {height: 100%;}
 
 body{
-        background-color: @color_fondo;
+        background: @color_fondo2 url(../img/bg-sand.png) 0 0 repeat-x;
         font-size: 16px;
     	line-height: 1.2;
         margin: auto auto;
@@ -93,8 +94,8 @@ section{
     }
 
 footer{
-    background-color: darken(@color_fondo, 4%);
-    border-top: 1px solid darken(@color_fondo, 8%);
+    background-color: darken(@color_fondo2, 4%);
+    border-top: 1px solid darken(@color_fondo2, 8%);
     height: 250px; /* Altura del Footer en px*/
     margin-top: -180px; /* altura en px del footer con valor negativo */
     padding-top: 5px;
